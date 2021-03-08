@@ -27,7 +27,7 @@ function main(){
                 text.html(sec);
                 sec-=1;
             }
-            else if (sec >= 0 && sec<=5){
+            else if (sec > 0 && sec<=5){
                 text.html(sec+' alert, prepare your army').css('color','red');
                 sec-=1;
             }
