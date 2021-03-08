@@ -1,12 +1,9 @@
 $(document).ready(main);
 
 function main(){
-    //$("#counter").hide();
+    $("#counter").hide();
     $("#start").click(clck);
-    funtion initial(){
-        var time1 = $("#time1").val();//obtiene el valor de id="time1"
-        var time2 = $("#time2").val();//obtiene el valor de id="time1"
-    }
+
     function tc(time){ // tc is Time conversor
         // divide el valor del tiempo en un array usando split(':') y devolviendo el array
         let t = time.split(':');
@@ -15,9 +12,10 @@ function main(){
     };
 
     function clck(){
-        initial();
-        //$("#counter").show();
-        //$("#init").hide();
+        var time1 = $("#time1").val();//obtiene el valor de id="time1"
+        var time2 = $("#time2").val();//obtiene el valor de id="time1"
+        $("#counter").show();
+        $("#init").hide();
         let timeA = new Date(0,0,0,0,tc(time1)[0],tc(time1)[1],0);
         let timeB = new Date(0,0,0,0,tc(time2)[0],tc(time2)[1],0);
         let totalTime = parseInt((timeB - timeA )/1000);
