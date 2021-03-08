@@ -35,5 +35,5 @@ function main(){
                 text.html('attack').css('font-size','21');
             }
         },1000);
-    };
+    }
 }
